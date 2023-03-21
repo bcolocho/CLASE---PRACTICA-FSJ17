@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(189, 183, 183);
+    
+}
+
+header {
+    border: 1px solid;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+section {
+    border: 2px solid black;
+    margin: 15px;
+    padding: 10px;
+    
+}
+
+
+.texto {
+    color: rgb(75, 62, 136);
+}
