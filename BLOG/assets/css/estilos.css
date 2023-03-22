@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;/**Validamos que las cajas hias esten solo en el contenedor padre**/
+
+}
+
+body {
+    font-family: 'Alkatra', cursive ;
 }
 
 header {
@@ -26,4 +34,83 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+
+/** agregando estilos al contenido principal**/
+.box-center {
+    width: 80%;
+    margin: auto;/*se toma el margen automatico que provee el navegador*/
+    padding: 25px;
+    
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2rem;/** asignando tamaño de la fuente*/
+    color: #4D6045;
+
+}
+
+section {
+    display: flex; /** indcamos que el contenedr sera flexible*/
+    justify-content: space-around;
+}
+
+#image {
+    width: 60%;
+}
+
+footer {
+    background-color: #152861;
+}
+/** display asigna como va a trabajar un elemento
+ -inline-block: elementos que se pponen en bloque y linea
+ **/
+
+.footer_container {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    padding: 50px 0; /** quiere decir 50px arriba y abajo y cero izquierda y derecha **/
+    gap: 20px;  /** hace como si fuera in pádding el gap  es el espacio que se afignan entre columnas**/
+    color: white;
+}
+
+/** diseñando el aparado de lños iconos**/
+.margen {
+    margin: 30px 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap; /* estamos trabajando con los elementos si van a estar en filo y los estamos envolviendo en una linea*/ 
+
+}
+
+.icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #509F36;
+    border-radius: 50%;
+    color: white;
+    margin: 5px;
+}
+
+.footer_container .info .icons {
+    width: 60%;
+
+}
+
+.footer_container .info .icons a {
+    width: 50px;
+    height: 50px;
+}
+
+/* pseudo clase: hover */
+.footer_container .info .icons a:hover {
+    background: transparent;
 }
