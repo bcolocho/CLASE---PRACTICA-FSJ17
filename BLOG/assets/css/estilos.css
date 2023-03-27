@@ -1,96 +1,89 @@
+/**importando la fuente */
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
-
+/** selector universal para el reseteo de la pagina(*) */
 *{
+    /** con el universal solo podemos tener: margin y padding */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;/**Validamos que las cajas hias esten solo en el contenedor padre**/
-
+    box-sizing: border-box;/** validamos que las cajas hijas este solo en la caja padre */
 }
-
-body {
-    font-family: 'Alkatra', cursive ;
+body{
+    /** asignando tipo de fuente */
+    font-family: 'Alkatra', cursive;
 }
-
-header {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1003)'%3e%3c/rect%3e%3cpath d='M1440 0L1143.72 0L1440 100.5z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1143.72 0L1440 100.5L1440 287.28999999999996L823.82 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M823.82 0L1440 287.28999999999996L1440 356.9L739.59 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M739.59 0L1440 356.9L1440 359.63L305.40000000000003 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L192.9 560L0 476.07z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 476.07L192.9 560L785.03 560L0 367.86z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 367.86L785.03 560L1041.24 560L0 267.81z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 267.81L1041.24 560L1127.46 560L0 176.7z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1003'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+header{
+    /** propiedad para colocar imagen de fondo */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1000' height='560' preserveAspectRatio='none' viewBox='0 0 1000 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1009%26quot%3b)' fill='none'%3e%3crect width='1000' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1010)'%3e%3c/rect%3e%3cpath d='M 0%2c155 C 40%2c147.6 120%2c96.6 200%2c118 C 280%2c139.4 320%2c258 400%2c262 C 480%2c266 520%2c144 600%2c138 C 680%2c132 720%2c247.2 800%2c232 C 880%2c216.8 960%2c96 1000%2c62L1000 560L0 560z' fill='%23184a7e'%3e%3c/path%3e%3cpath d='M 0%2c406 C 66.8%2c429 200.4%2c523.8 334%2c521 C 467.6%2c518.2 534.8%2c410.2 668%2c392 C 801.2%2c373.8 933.6%2c422.4 1000%2c430L1000 560L0 560z' fill='%232264ab'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1009'%3e%3crect width='1000' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='11%25' y1='-19.64%25' x2='89%25' y2='119.64%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1010'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    /** asignando alto a la caja */
     height: 200px;
     color: white;
+    /** alineando el texto al centro */
     text-align: center;
-    line-height: 200px;
-    
-}
+    line-height: 200px; /**propiedad que toma el espacio de alto para que el texto quede al centro */
 
-nav {
+}
+nav{
     background-color: #152861;
-    text-align: center;
+    text-align: center;    
 }
-
-nav ul li {
+nav ul li{
     display: inline-block;
-    list-style: none;
-    margin: 10px;
+    list-style: none; /** no va a tener ningun estilo de lista */
+    margin: 10px;    
 }
-
-nav ul li a {
+nav ul li a{
     color: white;
-    text-decoration: none;
+    text-decoration: none; /** no va a tener ninguna decoracion */
 }
-
-
-/** agregando estilos al contenido principal**/
-.box-center {
-    width: 80%;
-    margin: auto;/*se toma el margen automatico que provee el navegador*/
+/** agregando estilos al contenido principal*/
+.box-center{
+    width: 80%;/** define el ancho del contenedor padre */
+    margin: auto;/** se toma el margen automatico que provee el navegador */
     padding: 25px;
-    
 }
-
-.titulo {
+.titulo{
     text-align: center;
-    font-size: 2rem;/** asignando tamaño de la fuente*/
-    color: #4D6045;
-
+    /** 1rem => 16 px */
+    font-size: 2rem; /** asignando tamaño a la fuente */
+    color: #1428A2;
 }
-
-section {
-    display: flex; /** indcamos que el contenedr sera flexible*/
+.box-section{
+    display: flex;/** indicamos que el contenedor va a ser flexible */
     justify-content: space-around;
 }
-
-#image {
+#imagen{
     width: 60%;
 }
-
-footer {
+footer{
     background-color: #152861;
 }
-/** display asigna como va a trabajar un elemento
- -inline-block: elementos que se pponen en bloque y linea
- **/
-
-.footer_container {
+/** 
+Display: asigna como va a trabajar un elemento 
+-inline-block: elementos que se ponene en bloqueo y en linea
+-flex: los elementos se asignan de forma flexible
+-grid: los elementos estaran asociados en columnas y firlas
+ */
+.footer_container{
     display: grid;
-    grid-template-columns:1fr 1fr;
+    /** asignamos cuantas columnas queremos */
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    padding: 50px 0; /** quiere decir 50px arriba y abajo y cero izquierda y derecha **/
-    gap: 20px;  /** hace como si fuera in pádding el gap  es el espacio que se afignan entre columnas**/
+    padding: 50px 0;/**50 px arriba y abajo, 0 pixeles derecha e izquierda */
+    gap: 20px; /** es un espacio que le asignamos dentro de las columnas */
     color: white;
 }
-
-/** diseñando el aparado de lños iconos**/
-.margen {
+/** diseñanado el apartado de los iconos*/
+.margen{
     margin: 30px 0;
 }
-
-.icons {
+.icons{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: row nowrap; /* estamos trabajando con los elementos si van a estar en filo y los estamos envolviendo en una linea*/ 
-
+    flex-flow: row nowrap;
+    /** estamos trabajando con los elementos si van a estar en fila y si los estamos envolviendo en una sola linea */
 }
-
-.icons a {
+.icons a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,18 +92,109 @@ footer {
     color: white;
     margin: 5px;
 }
-
-.footer_container .info .icons {
-    width: 60%;
-
+.footer_container .info .icons{
+    width: 60%;    
 }
-
-.footer_container .info .icons a {
+.footer_container .info .icons a{
     width: 50px;
     height: 50px;
 }
-
-/* pseudo clase: hover */
-.footer_container .info .icons a:hover {
+/** Pseudoclase: hover: */
+.footer_container .info .icons a:hover{
     background: transparent;
+}
+/** Apartado de viajes.html */
+.seccion-card{
+    display: flex;/** indicamos que los elementos van a ser flexibles */
+    justify-content: space-around;
+    flex-flow: row wrap;/** envuelve los elementos en una fila */
+}
+.card{
+    width: 30%;
+    height: 180px;
+    /** colocando sombra al contenedor */
+    box-shadow: 0 0 10px 5px rgba(0,0, 0, 0.5) ; /** x (horizontal),y (vertical), blur-radius (opacidad o desenfoque de la sombra), spread-radius (propagacion de la sombra ), color */
+    margin-bottom: 30px;
+    background-size: cover; /** indicamos que lo haya dentro de la caja se va adaptar al tamaño de la tarjeta */
+    background-position: center; /** indicamos el posicionamiento de los elementos de la tarjeta */
+}
+.seccion-card img{
+    /**  */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /** solo se utiliza para imagenes o videos que se adapten el tamaño del contenedor */
+    transition: all .5s;
+}
+.card:hover{
+    transform: scale(1.1); /** x=1.1, y=1.1 */
+} 
+/** apartado de contacto.html */
+.contacto-fondo {
+    background-image: url(../img/viaje4.jpg);
+    height: 30rem; /** 1rem=16px */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+}
+.formulario{
+    background-color: rgba(192, 192, 192, 0.3);
+    margin: -10rem auto 0 auto;/** -10=top, auto=right, 0=bottom, auto=left */
+    width: 90%;
+    padding: 3rem;
+}
+form label{
+    font-weight: bold;/** peso de la letra */
+}
+/** selector por atributo */
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    height: 30px;
+    padding: 3px 10px;/**top-bottom-right-keft */
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    margin: 8px 0;
+    display: block; /** los elementos se aplican uno abajo del otro */
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    margin: 8px 0;
+    display: block; /** los elementos se aplican uno abajo del otro */
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 32px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+/** aplicando media query */
+@media (max-width: 1100px){
+    .icons{
+        width: 100% !important; /** con el !important asignamos que esto va ser mas importante */
+    }
+}
+
+/** aplicando estilos para pantallas pequeñas */
+@media (max-width: 550px){
+    .box-section{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .footer_container{
+        /** asignamos una sola columna */
+        grid-template-columns: 1fr;
+    }
+
+    /** apartado de viajes.html */
+    .card{
+        width: 100%;
+    }
+
 }
