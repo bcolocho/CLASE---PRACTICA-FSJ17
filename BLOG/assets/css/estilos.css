@@ -136,15 +136,18 @@ Display: asigna como va a trabajar un elemento
     background-repeat: no-repeat;
     background-position: center -100px;
 }
+
 .formulario{
     background-color: rgba(192, 192, 192, 0.3);
     margin: -10rem auto 0 auto;/** -10=top, auto=right, 0=bottom, auto=left */
     width: 90%;
     padding: 3rem;
 }
+
 form label{
     font-weight: bold;/** peso de la letra */
 }
+
 /** selector por atributo */
 input[type="text"],
 input[type="email"]{
@@ -173,6 +176,11 @@ input[type="submit"]{
     color: white;
     border-radius: 3px;
 }
+
+input[type="submit"]:hover {
+    background-color: #509F36;
+}
+
 /** aplicando media query */
 @media (max-width: 1100px){
     .icons{
@@ -195,6 +203,11 @@ input[type="submit"]{
     /** apartado de viajes.html */
     .card{
         width: 100%;
+    }
+
+    .contacto-fondo {
+        background-position: center;
+                            
     }
 
 }
