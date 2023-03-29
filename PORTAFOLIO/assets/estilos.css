@@ -63,4 +63,43 @@ main{
 .skills-row{
     width: 50%;
     margin: 100px auto;
+    
 }
+.skills {
+    margin-top: 8rem;
+}
+.developer-img{
+    width: 30%;
+    float: left;
+}
+.skill-paragraph{
+    text-align: left;
+    margin-top: 2rem;
+    
+}
+.chillies-img{
+   width: 25%;
+   float: right;
+}
+.skills-row h3{
+    text-align: left;
+    color: #26bfca;
+}
+.contact h3 {
+    text-align: center;
+}
+.contact .skill-paragraph{
+    text-align: center;
+    
+}
+.contact-button{
+    margin-top: 5rem;
+    padding: 5px 5px;
+    background-color: #11c1c8;
+    border-color: #11c1c8;
+    color: white;
+    border-radius: 3px;   
+}
+
+
+
