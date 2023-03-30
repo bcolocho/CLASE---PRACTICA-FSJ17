@@ -87,19 +87,41 @@ main{
 }
 .contact h3 {
     text-align: center;
+    color: #1ca4ad;
 }
 .contact .skill-paragraph{
     text-align: center;
     
 }
 .contact-button{
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding: 5px 5px;
     background-color: #11c1c8;
     border-color: #11c1c8;
     color: white;
     border-radius: 3px;   
 }
+
+footer{
+    background-color: #53d9e2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+.footer-enlace ul li a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+    color: #030303;      
+}
+
+.copy-footer{
+    padding: 3rem;
+    color: white;
+}
+
 
 
 
