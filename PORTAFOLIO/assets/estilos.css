@@ -104,18 +104,23 @@ main{
 
 footer{
     background-color: #53d9e2;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: auto;
-    padding: 10px;
+   
 }
-.footer-enlace ul li a{
+fotter ul{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: column nowrap;
-    color: #030303;      
+    justify-content: center;
+    gap: 25px;
+    margin: 50px;
 }
+footer ul ol{
+    list-style: none;
+    margin-top: 40px; 
+}
+footer ul ol a{
+    color: #278ca5;
+    text-decoration: none;
+}
+
 
 .copy-footer{
     padding: 3rem;
