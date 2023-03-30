@@ -62,69 +62,81 @@ main{
 
 .skills-row{
     width: 50%;
-    margin: 100px auto;
-    
+    margin: 100px auto;  
 }
+
 .skills {
     margin-top: 8rem;
 }
+
 .developer-img{
     width: 30%;
     float: left;
 }
+
 .skill-paragraph{
     text-align: left;
-    margin-top: 2rem;
-    
+    margin-top: 2rem;  
 }
+
 .chillies-img{
    width: 25%;
    float: right;
 }
+
 .skills-row h3{
     text-align: left;
     color: #26bfca;
 }
+
 .contact h3 {
     text-align: center;
     color: #1ca4ad;
 }
+
 .contact .skill-paragraph{
-    text-align: center;
-    
+    text-align: center; 
 }
+
 .contact-button{
     margin-top: 3rem;
-    padding: 5px 5px;
+    padding: 10px 15px;
     background-color: #11c1c8;
     border-color: #11c1c8;
     color: white;
     border-radius: 3px;   
 }
 
-footer{
-    background-color: #53d9e2;
-   
-}
-fotter ul{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin: 50px;
-}
-footer ul ol{
-    list-style: none;
-    margin-top: 40px; 
-}
-footer ul ol a{
-    color: #278ca5;
-    text-decoration: none;
+.contact-button:hover{
+    background-color: #93bb81;
 }
 
+footer{
+    background-color: #3aa6ad;
+    width: 100%;
+    min-height: 100px;   
+}
+
+.contenedor-pie{
+    color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: center;/*centrado horizotal*/
+    align-items: center;/*centrado vertical*/
+    gap: 20px; /*separacion de elementos*/
+    padding-top: 30px;
+}
+
+.contenedor-pie a{
+    color: #246d83;
+    font-size: 30px;
+}
 
 .copy-footer{
-    padding: 3rem;
-    color: white;
+    text-align: center;
+    color: #fff;   
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
