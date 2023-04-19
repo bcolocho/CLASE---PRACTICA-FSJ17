@@ -1,0 +1,29 @@
+#banner{
+    background-image: url(../img/shutterstock_116403520.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -100px;
+}
+.feature{
+    border: 2px solid #75c8d6;
+}
+.feature-img {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.text-card{
+    text-align: justify;
+}
+@media (max-width:570px){
+    #banner{
+        height: 250px;
+        background-position: center;
+    }
+    .text-card{
+        margin-top: 20px;
+    }
+}
